@@ -2,30 +2,20 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import styles from "./Movie.module.css";
 
-function Movie({ id, coverImg, title, year, summary, genres }) {
+function Movie({ id, large_cover_image, title_long }) {
     return (
-        <div className={styles.movie}>
-            <img src={coverImg} alt={title} className={styles.movie__img} />
-            <div>
-                <h2 className={styles.movie__title}>
-                    <Link to={`${process.env.PUBLIC_URL}/movie/${id}`}>{title}</Link>
-                </h2>
-                <h3 className={styles.movie__year}>{year}</h3>
-                <p>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
-                <ul className={styles.movie__genres}>
-                    {genres.map((g) => (
-                        <li key={g}>{g}</li>
-                    ))}
-                </ul>
-            </div>
-        </div>
+        <li className={styles.movie_item}>
+            <Link to={`${process.env.PUBLIC_URL}/movie/${id}`}>
+                <img className={styles.movie_img} src={large_cover_image} />
+            </Link>
+
+            <h3 className={styles.movie_title}>{title_long}</h3>
+        </li>
     );
 }
 Movie.propTypes = {
     id: PropTypes.number.isRequired,
-    coverImg: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    summary: PropTypes.string.isRequired,
-    genres: PropTypes.arrayOf(PropTypes.string).isRequired,
+    large_cover_image: PropTypes.string.isRequired,
+    title_long: PropTypes.string.isRequired,
 };
 export default Movie;

@@ -1,9 +1,15 @@
 import { useState, useEffect } from "react";
-import Movie from "./components/Movie";
 import Home from "./routes/Home";
 import Detail from "./routes/Detail";
-
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+// FontAwsome use
+import ReactDOM from "react-dom";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+library.add(faAngleLeft, faAngleRight);
+
+// Routes import
 
 function App() {
     return (
