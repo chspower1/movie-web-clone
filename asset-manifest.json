@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/movie-web-clone/static/css/main.b223f816.css",
-    "main.js": "/movie-web-clone/static/js/main.80990589.js",
+    "main.css": "/movie-web-clone/static/css/main.992d79ac.css",
+    "main.js": "/movie-web-clone/static/js/main.4078bf03.js",
+    "static/media/SEBANG Gothic OTF.otf": "/movie-web-clone/static/media/SEBANG Gothic OTF.e673ab34f409ada50620.otf",
+    "static/media/SEBANG Gothic OTF Bold.otf": "/movie-web-clone/static/media/SEBANG Gothic OTF Bold.799512f7506013ea5139.otf",
     "index.html": "/movie-web-clone/index.html",
-    "main.b223f816.css.map": "/movie-web-clone/static/css/main.b223f816.css.map",
-    "main.80990589.js.map": "/movie-web-clone/static/js/main.80990589.js.map"
+    "main.992d79ac.css.map": "/movie-web-clone/static/css/main.992d79ac.css.map",
+    "main.4078bf03.js.map": "/movie-web-clone/static/js/main.4078bf03.js.map"
   },
   "entrypoints": [
-    "static/css/main.b223f816.css",
-    "static/js/main.80990589.js"
+    "static/css/main.992d79ac.css",
+    "static/js/main.4078bf03.js"
   ]
 }
